@@ -1,0 +1,10 @@
+<div class="row">
+   <div class="col-xs-10">
+<span>{{ task.name }}</span>
+   <button type="button"
+      *ngIf="!task.isCompleted" 
+      (click)="completeTask()">Označi kao završeno</button>
+   <button type="button"
+      (click)="deleteTask()">Izbriši</button>
+      </div>
+   </div>
